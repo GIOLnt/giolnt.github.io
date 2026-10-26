@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GL — AI Filmmaker</title>
+  <meta name="robots" content="noindex, nofollow">  <!-- sito anonimo: invisibile ai motori di ricerca, si apre solo col link -->
+  <meta name="description" content="Portfolio of GL: short films, documentaries and commercials made with AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ BARRA IN ALTO ═══ -->
+  <header class="topbar">
+    <a href="#top" class="topbar__name" data-site="nome"></a>
+    <nav class="topbar__nav">
+      <a href="#short-film">Short films</a>
+      <a href="#documentari">Documentaries</a>
+      <a href="#spot">Commercials</a>
+      <a href="#tecniche">Techniques</a>
+      <a href="#chi-sono">About</a>
+    </nav>
+    <div class="topbar__lang"><span class="is-on">EN</span><span>EL</span><span>IT</span></div>
+  </header>
+  <div class="progress"><div class="progress__bar"></div></div>
+
+  <main id="top">
+
+    <!-- ═══ APERTURA: il reel a tutto schermo, protagonisti i lavori ═══
+         Quando il reel è pronto basta salvarlo come media/showreel.mp4: parte da solo, senza audio, a tutto schermo. -->
+    <section class="hero">
+      <div class="hero__media media" data-label="SHOWREEL · 60-90 s · un breve spezzone di tutti i lavori · partirà da solo a tutto schermo">
+        <video class="hero__video" muted loop playsinline preload="auto"></video>
+      </div>
+      <div class="hero__shade"></div>
+      <div class="hero__caption">
+        <span data-site="ruolo"></span>
+        <span class="hero__cats">Short films · Documentaries · Commercials</span>
+      </div>
+      <button class="hero__sound" type="button" hidden>Audio</button>
+      <div class="hero__scroll">Scroll</div>
+    </section>
+
+    <!-- ═══ FASCIA PREMIO ═══ -->
+    <section class="award">
+      <div class="award__track">
+        <span class="award__item"><b data-site="premio.titolo"></b> <i data-site="premio.dettaglio"></i></span>
+        <span class="award__item"><b data-site="premio.titolo"></b> <i data-site="premio.dettaglio"></i></span>
+        <span class="award__item"><b data-site="premio.titolo"></b> <i data-site="premio.dettaglio"></i></span>
+        <span class="award__item"><b data-site="premio.titolo"></b> <i data-site="premio.dettaglio"></i></span>
+      </div>
+    </section>
+
+    <!-- ═══ 01 SHORT FILM ═══ -->
+    <!-- ═══ 01 SHORT FILM: scorrono in orizzontale ═══ -->
+    <section class="section section--h" id="short-film">
+      <div class="hscroll">
+        <header class="section__head hscroll__head">
+          <span class="section__num">01</span>
+          <h2 class="section__title">Short films</h2>
+          <p class="section__intro">Short stories, directed scene by scene.</p>
+        </header>
+        <div class="hscroll__track">
+          <article class="film" data-full="media/film/the_letter.mp4">
+            <div class="media" data-label="THE LETTER">
+              <video class="preview" data-src="media/anteprime/the_letter.mp4" poster="media/anteprime/the_letter.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="film__info">
+              <h3>The Letter</h3>
+              <p>Constantinople, 1453.</p>
+              <span class="tag">Short film</span>
+            </div>
+          </article>
+          <article class="film" data-full="media/film/let_her_finish.mp4">
+            <div class="media" data-label="LET HER FINISH">
+              <video class="preview" data-src="media/anteprime/let_her_finish.mp4" poster="media/anteprime/let_her_finish.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="film__info">
+              <h3>Let Her Finish</h3>
+              <p>A girl comes home to her mother.</p>
+              <span class="tag">Short film</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 02 DOCUMENTARI: scorrono in orizzontale ═══ -->
+    <section class="section section--h" id="documentari">
+      <div class="hscroll">
+        <header class="section__head hscroll__head">
+          <span class="section__num">02</span>
+          <h2 class="section__title">Documentaries</h2>
+          <p class="section__intro">Historical reconstructions, in Greek, English and Italian.</p>
+        </header>
+        <div class="hscroll__track">
+          <article class="doc" data-full="media/film/venezia.mp4">
+            <div class="media media--tall" data-label="VENICE">
+              <video class="preview" data-src="media/anteprime/venezia.mp4" poster="media/anteprime/venezia.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Venice</h3><p>San Giorgio dei Greci</p>
+          </article>
+          <article class="doc" data-full="media/film/napoli.mp4">
+            <div class="media media--tall" data-label="NAPLES UNDERGROUND">
+              <video class="preview" data-src="media/anteprime/napoli.mp4" poster="media/anteprime/napoli.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Naples Underground</h3><p>The Greek soul of Naples</p>
+          </article>
+          <article class="doc" data-full="media/film/anticitera.mp4">
+            <div class="media media--tall" data-label="ANTIKYTHERA">
+              <video class="preview" data-src="media/anteprime/anticitera.mp4" poster="media/anteprime/anticitera.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Antikythera</h3><p>The Machine That Shouldn't Exist · English version · 3rd place MotionMux</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 03 SPOT: scorrono in orizzontale come i documentari; al clic lo spot intero con l'audio (data-full) ═══ -->
+    <section class="section section--h" id="spot">
+      <div class="hscroll">
+        <header class="section__head hscroll__head">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Commercials</h2>
+          <p class="section__intro">Spec ads: commercials made without a client, to show the method.</p>
+        </header>
+        <div class="hscroll__track">
+          <article class="doc" data-full="media/spot/intero/ether.mp4">
+            <div class="media media--tall" data-label="ETHER">
+              <video class="preview" data-src="media/spot/ether.mp4" poster="media/spot/ether.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Ether</h3><p>Fragrance commercial</p>
+          </article>
+          <article class="doc" data-full="media/spot/intero/scarpa.mp4">
+            <div class="media media--tall" data-label="STRIDE">
+              <video class="preview" data-src="media/spot/scarpa.mp4" poster="media/spot/scarpa.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Stride</h3><p>Running shoe commercial</p>
+          </article>
+          <article class="doc" data-full="media/spot/intero/orologio.mp4">
+            <div class="media media--tall" data-label="CHRONO">
+              <video class="preview" data-src="media/spot/orologio.mp4" poster="media/spot/orologio.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Chrono</h3><p>Watch commercial</p>
+          </article>
+          <article class="doc" data-full="media/spot/intero/aurelia.mp4">
+            <div class="media media--tall" data-label="AURÉLIA">
+              <video class="preview" data-src="media/spot/aurelia.mp4" poster="media/spot/aurelia.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Aurélia</h3><p>Skincare commercial</p>
+          </article>
+          <article class="doc" data-full="media/spot/intero/pulse.mp4">
+            <div class="media media--tall" data-label="PULSE">
+              <video class="preview" data-src="media/spot/pulse.mp4" poster="media/spot/pulse.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Pulse</h3><p>Speaker commercial</p>
+          </article>
+          <article class="doc" data-full="media/spot/intero/zest.mp4">
+            <div class="media media--tall" data-label="ZEST">
+              <video class="preview" data-src="media/spot/zest.mp4" poster="media/spot/zest.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <h3>Zest</h3><p>Juice commercial</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 04 TECNICHE: scorrono in orizzontale come le altre sezioni; al clic l'animazione intera con l'audio ═══ -->
+    <section class="section section--h" id="tecniche">
+      <div class="hscroll">
+        <header class="section__head hscroll__head">
+          <span class="section__num">04</span>
+          <h2 class="section__title">Techniques</h2>
+          <p class="section__intro">From prompt to film: how every shot is made.</p>
+        </header>
+        <div class="hscroll__track">
+          <article class="film" data-full="media/tecniche/partitura.mp4">
+            <div class="media" data-label="IMAGE → VIDEO">
+              <video class="preview" data-src="media/tecniche/partitura_anteprima.mp4" poster="media/tecniche/partitura_anteprima.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="film__info">
+              <span class="tech__steps">Image <em>→</em> Video</span>
+              <p>4 reference photos and a 1,434-word prompt: each block directs its own second of video. From The Letter.</p>
+            </div>
+          </article>
+          <article class="film" data-full="media/tecniche/testo_video.mp4">
+            <div class="media" data-label="TEXT → VIDEO">
+              <video class="preview" data-src="media/tecniche/testo_video_anteprima.mp4" poster="media/tecniche/testo_video_anteprima.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="film__info">
+              <span class="tech__steps">Text <em>→</em> Video</span>
+              <p>No images: a 523-word prompt becomes the shots, the camera move, the voice and the music. 1080p.</p>
+            </div>
+          </article>
+          <article class="film" data-full="media/tecniche/blender.mp4">
+            <div class="media" data-label="BLENDER → CLAY → VIDEO">
+              <video class="preview" data-src="media/tecniche/blender_anteprima.mp4" poster="media/tecniche/blender_anteprima.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="film__info">
+              <span class="tech__steps">Blender <em>→</em> Clay <em>→</em> Video</span>
+              <p>Camera and volumes from the 3D model, materials from a colour legend: a 360° turn inside the real church.</p>
+            </div>
+          </article>
+          <article class="film" data-full="media/tecniche/storyboard.mp4">
+            <div class="media" data-label="STORYBOARD → VIDEO">
+              <video class="preview" data-src="media/tecniche/storyboard_anteprima.mp4" poster="media/tecniche/storyboard_anteprima.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="film__info">
+              <span class="tech__steps">Storyboard <em>→</em> Video</span>
+              <p>A 6-panel grid becomes a 15-second commercial, shot by shot, in a single generation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 05 CHI SONO ═══ -->
+    <section class="section about" id="chi-sono">
+      <header class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title">About</h2>
+      </header>
+      <div class="about__body">
+        <!-- testo deciso il 25 ott (prima in italiano, poi tradotto): il mestiere di designer come base, non come un'altra vita -->
+        <p class="about__lead reveal">For thirty-five years I designed objects. <em>Now I direct them.</em></p>
+        <div class="about__text">
+          <p class="reveal">I am an industrial designer and a 3D artist. I worked for fifteen years in Italy and for more than twenty in Greece, designing products and building them in 3D, from the first idea to the final render. Light, materials and proportion have always been my craft.</p>
+          <p class="reveal">I started using artificial intelligence in my design work, connecting it to my 3D software to offer clients something better. Then a still image was no longer enough. I wanted to see my projects move, come alive, have a story.</p>
+          <p class="reveal">For about two years I have been directing films with AI: historical documentaries for my YouTube channel TIMELESS GR, short films and commercials. The first results are coming in: with <i>Antikythera</i> we won third place in an international AI film competition, the MotionMux Wan 3.0 Hackathon.</p>
+          <p class="reveal">I don’t work alone: every project is made together with Claude, Anthropic’s AI. I take care of the direction; together we write, build the prompts and edit. The method is still the design method: brief, idea, prototype, tests, final version.</p>
+          <p class="about__close reveal">I bring a designer’s eye; Claude brings speed and memory. Together we do what I have always done: take an idea and give it shape. Only now, it moves.</p>
+        </div>
+        <p class="about__langs reveal">Italiano · Ελληνικά · English</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ CONTATTI ═══ -->
+  <footer class="footer" id="contatti">
+    <p class="footer__sign">© <span data-site="nome"></span></p>
+  </footer>
+
+  <!-- ═══ LETTORE: lo spot intero con audio, a tutto schermo ═══ -->
+  <div class="player" hidden role="dialog" aria-modal="true" aria-label="Video player">
+    <button class="player__close" type="button">Close ✕</button>
+    <div class="player__box">
+      <video class="player__video" controls playsinline preload="none"></video>
+      <!-- scheda del lavoro: la riempie main.js con i dati di window.WORKS (config.js) -->
+      <div class="player__card" hidden>
+        <h3 class="player__title"></h3>
+        <span class="player__meta"></span>
+        <p class="player__text"></p>
+        <p class="player__award"></p>
+        <dl class="player__credits"></dl>
+        <p class="player__note"></p>
+        <p class="player__tools"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

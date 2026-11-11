@@ -1,6 +1,6 @@
 // ═══ DATI DEL SITO — si cambiano qui, una volta sola, e valgono per tutte le pagine ═══
 window.SITE = {
-  nome: 'GL',  // sito anonimo: solo le iniziali (26 ott)
+  nome: 'Giovanni Lonato',  // 11 nov 2026: sito col nome vero (prima solo «GL»)
   ruolo: 'AI Filmmaker',
   sottotitolo: 'Cortometraggi, documentari e spot creati con l’intelligenza artificiale',
   premio: {
@@ -13,16 +13,16 @@ window.SITE = {
 // Testi approvati uno per uno il 25 ott. La chiave è il file del video intero (data-full).
 // Crediti come nei titoli di coda: solo i ruoli veri; il primo nome va in oro. Le tecniche non hanno crediti.
 const CREDITS_FILM = [
-  ['Directed by', 'GL'],
-  ['Written by', 'GL & Claude'],
-  ['Prompts & AI direction', 'Claude (Anthropic) & GL'],
-  ['Edit & sound', 'Claude (Anthropic) — supervised by GL']
+  ['Directed by', 'Giovanni Lonato'],
+  ['Written by', 'Giovanni Lonato & Claude'],
+  ['Prompts & AI direction', 'Claude (Anthropic) & Giovanni Lonato'],
+  ['Edit & sound', 'Claude (Anthropic) — supervised by Giovanni Lonato']
 ];
 const CREDITS_DOC = [...CREDITS_FILM, ['Narration', 'George — ElevenLabs (AI voice)']];
 const CREDITS_SPOT = [
-  ['Directed by', 'GL'],
-  ['Storyboard & prompts', 'Claude (Anthropic) & GL'],
-  ['Edit', 'GL']
+  ['Directed by', 'Giovanni Lonato'],
+  ['Storyboard & prompts', 'Claude (Anthropic) & Giovanni Lonato'],
+  ['Edit', 'Giovanni Lonato']
 ];
 
 window.WORKS = {
